@@ -5,19 +5,20 @@
 :root {
     --header-height: 70px;
 }
-
 .w-105p {
     width: 105px;
-}
-.w-75p {
-    width: 75px;
 }
 .w-85p {
     width: 85px;
 }
+.w-75p {
+    width: 75px;
+}
 
 
-/* HEADER */
+/* 
+    HEADER 
+*/
 header {
     position: fixed;
     top: 0;
@@ -29,9 +30,7 @@ header {
 header .row {
     align-items: center;
 }
-header .row .col-auto img.d-none {
-    height: 40px;
-}
+header .row .col-auto img.d-none,
 header .row .col-auto img.d-block {
     height: 40px;
 }
@@ -44,7 +43,9 @@ header .search input {
 }
 
 
-/* MAIN */
+/* 
+    MAIN 
+*/
 main {
     margin-top: var(--header-height);
     overflow: hidden;
@@ -63,11 +64,9 @@ main aside > * {
 main aside a:hover {
     background-color: rgba(255, 255, 255, 0.238);
 }
-
 main .dashboard {
     height: calc(100vh - var(--header-height));
 }
-
 main .dashboard .dashboard-summary .badge {
     background-color: #165bba;
     font-size: 0.8rem;
@@ -75,10 +74,10 @@ main .dashboard .dashboard-summary .badge {
 main .dashboard .dashboard-summary .badge:hover {
     background-color: #0d3771;
 }
-main .dashboard .dashboard-summary .col-12.col-sm-4.col-lg-2 a {
+main .dashboard .dashboard-summary .col-12.col-sm.col-lg-3 a {
     vertical-align: middle;
 }
-main .dashboard .dashboard-summary .col-12.col-sm-4.col-lg-2 i.bi {
+main .dashboard .dashboard-summary .col-12.col-sm.col-lg-3 i.bi {
     display: inline-block;
     height: 35px;
     width: 35px;
@@ -88,7 +87,6 @@ main .dashboard .dashboard-summary .col-12.col-sm-4.col-lg-2 i.bi {
     color: white;
     border: 1px solid white;
     border-radius: 5px;
-    margin-left: 10px;
     font-size: 1.2em !important;
 }
 main .dashboard .dashboard-summary .col-12.col-sm-4.col-lg-2 i.bi:hover {
@@ -113,38 +111,16 @@ main .dashboard .dashboard-content .bi-trash3-fill:hover {
     color: white;
     border: 1px solid white;
 }
-
 main .dashboard .dashboard-content .code-class {
     height: 30px;
     margin-right: 10px;
 }
 
-
-
-
-/* MEDIA QUERY */
+/* 
+    MEDIA QUERY 
+*/
 @media screen and (min-width: 992px) {
     .offcanvas {
         width: 50% !important;
     }
-}
-
-
-
-
-
-
-/* DEBUG */
-
-.box {
-    width: 100%;
-    height: 200px;
-    background-color: red;
-    margin: 20px 0;
-}
-.green {
-    background-color: green;
-}
-.yellow {
-    background-color: yellow;
 }

@@ -23,16 +23,17 @@ header {
     top: 0;
     right: 0;
     left: 0;
+    background-color: #f8f9fa;
+    height: var(--header-height);
 }
 header .row {
-    height: var(--header-height);
     align-items: center;
 }
 header .row .col-auto img.d-none {
     height: 40px;
 }
 header .row .col-auto img.d-block {
-    height: 60px;
+    height: 40px;
 }
 header .search,
 header .search input {
@@ -46,7 +47,6 @@ header .search input {
 /* MAIN */
 main {
     margin-top: var(--header-height);
-    height: calc(100vh - var(--header-height));
     overflow: hidden;
 }
 main aside {
@@ -59,6 +59,9 @@ main aside {
 }
 main aside > * {
     height: 100%;
+}
+main aside a:hover {
+    background-color: rgba(255, 255, 255, 0.238);
 }
 
 main .dashboard {
@@ -119,8 +122,12 @@ main .dashboard .dashboard-content .code-class {
 
 
 
-
-
+/* MEDIA QUERY */
+@media screen and (min-width: 992px) {
+    .offcanvas {
+        width: 50% !important;
+    }
+}
 
 
 

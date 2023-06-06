@@ -19,11 +19,11 @@
     <body>
 
         <!-- header -->
-        <header class="bg-white">
+        <header class="d-flex align-items-center">
 
-            <div class="row px-3 g-0">
+            <div class="row w-100 g-0 bg-white">
 
-                <div class="col-auto">
+                <div class="col-auto ps-3">
 
                     <img class="d-none d-lg-block" src="img/logo.svg" alt="Logo">
 
@@ -40,7 +40,7 @@
 
                 </div>
 
-                <div class="col-auto">
+                <div class="col-auto pe-3">
 
                     <i class="bi bi-list-task d-none d-lg-inline pe-2"></i>
 
@@ -54,11 +54,11 @@
 
                         <ul class="dropdown-menu">
 
-                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Profilo</a></li>
 
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Fatturazione</a></li>
 
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
 
                         </ul>
 
@@ -77,25 +77,25 @@
                 <!-- sidebar laterale -->
                 <aside class="col-auto">
 
-                    <div class="d-flex flex-column px-4 py-4 px-lg-5 py-lg-4">
+                    <div class="d-flex flex-column px-2 py-4 px-lg-3 py-lg-4">
 
                         <div class="flex-grow-1">
 
-                            <a href="#" class="text-decoration-none text-light d-block">
+                            <a href="#" class="text-decoration-none text-light d-block px-2">
 
                              <i class="bi bi-house-fill fs-3 pe-2"></i>
                              <h5 class="d-none d-lg-inline-block fs-4">Home</h5>
 
                             </a>
 
-                            <a href="#" class="text-decoration-none text-light d-block">
+                            <a href="#" class="text-decoration-none text-light d-block px-2">
 
                              <i class="bi bi-graph-up fs-3 pe-2"></i>
                              <h5 class="d-none d-lg-inline-block fs-4">Stats</h5>
 
                             </a>
 
-                            <a href="#" class="text-decoration-none text-light d-block">
+                            <a href="#" class="text-decoration-none text-light d-block px-2">
 
                              <i class="bi bi-reception-4 fs-3 pe-2"></i>
                              <h5 class="d-none d-lg-inline-block fs-4">Signals</h5>
@@ -107,7 +107,7 @@
 
                        <div>
 
-                           <a href="#" class="text-decoration-none text-light">
+                           <a href="#" class="text-decoration-none text-light d-block px-2">
 
                             <i class="bi bi-gear-fill fs-3 pe-2"></i>
                             <h5 class="d-none d-lg-inline-block fs-4">Admin</h5>
@@ -120,7 +120,7 @@
 
                 </aside>
 
-                <!-- dashboard content -->
+                <!-- dashboard main -->
                 <div class="col">
 
                     <div class="dashboard bg-info overflow-y-auto overflow-x-hidden">
@@ -129,14 +129,14 @@
 
                             <div class="row">
 
-                                <div class="col-12 col-sm-4 col-lg-2 order-lg-1">
+                                <div class="col-12 col-sm-4 col-lg-2 order-md-1">
 
                                     <a class="text-light text-decoration-none fs-6 fw-bold" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                         Nuovo Studente
                                         <i class="bi bi-plus-lg fs-3"></i>
                                     </a>
 
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 
                                         <div class="offcanvas-header">
 
@@ -148,18 +148,139 @@
 
                                         <div class="offcanvas-body">
 
-                                            <div>
+                                            <form method="GET" action="">
 
-                                                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                                <div class="container-fluid">
 
-                                            </div>
+                                                    <div class="row">
+
+                                                        <div class="col-12 col-sm">
+
+                                                            <div class="mb-3">
+                                                                <label for="name" class="form-label">Nome</label>
+                                                                <input name="name" type="text" class="form-control" id="name">
+                                                            </div>
+                                                              
+                                                        </div>
+
+                                                        <div class="col-12 col-sm">
+
+                                                            <div class="mb-3">
+                                                                <label for="surname" class="form-label">Cognome</label>
+                                                                <input name="surname" type="text" class="form-control" id="surname">
+                                                            </div>
+                                                              
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <div class="col-12 col-sm">
+
+                                                            <div class="mb-3">
+                                                                <label for="email" class="form-label">Email</label>
+                                                                <div class="input-group mb-3">
+                                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                                    <input name="email" id="email" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                                </div> 
+                                                            </div>
+                                                              
+                                                              
+                                                        </div>
+
+                                                        <div class="col-12 col-sm">
+
+                                                            <div class="mb-3">
+                                                                <label for="password" class="form-label">Password</label>
+                                                                <input name="password" type="password" class="form-control" id="password">
+                                                            </div>
+                                                              
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <div class="col">
+
+                                                            <div class="mb-3">
+                                                                <label for="address" class="form-label">Indirizzo</label>
+                                                                <input name="address" type="text" class="form-control" id="address">
+                                                            </div>
+                                                              
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <div class="col-12 col-sm-6">
+
+                                                            <div class="mb-3">
+                                                                <label for="city" class="form-label">Città</label>
+                                                                <input name="city" type="text" class="form-control" id="city">
+                                                            </div>
+                                                              
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-4">
+
+                                                            <div class="mb-3">
+                                                                <label for="state" class="form-label">Stato</label>
+                                                                <select name="state" id="state" class="form-select" aria-label="Default select example">
+                                                                    <option selected>Scegli..</option>
+                                                                    <option value="ita">Italia</option>
+                                                                    <option value="other">Altro</option>
+                                                                  </select>
+                                                            </div>
+                                                              
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-2">
+
+                                                            <div class="mb-3">
+                                                                <label for="cap" class="form-label">CAP</label>
+                                                                <input name="cap" type="text" class="form-control" id="cap">
+                                                            </div>
+                                                              
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <div class="col">
+
+                                                            <div class="mb-3">
+                                                                <label for="foto" class="form-label">Foto</label>
+                                                                <input name="foto" class="form-control" type="file" id="foto">
+                                                            </div>
+                            
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="form-check mb-3">
+                                                        <input name="select" class="form-check-input" type="checkbox" value="" id="select">
+                                                        <label class="form-check-label" for="select">
+                                                          Seleziona per proseguire
+                                                        </label>
+                                                    </div>
+                                                      
+                                                    <button class="btn btn-primary" type="submit">Salva</button>
+                                                    <button class="btn btn-warning" type="reset">Svuota</button>
+
+                                                </div>
+
+                                            </form>
 
                                         </div>
                                     </div>
 
                                 </div>
 
-                                <div class="col-12 col-sm-4 col-lg">
+                                <div class="col-12 col-sm-4 col-lg py-4 py-sm-0">
 
                                     <h3 class="fw-bold fs-2">Boolean <span class="badge rounded-5">Piano blaze</span></h3>
 

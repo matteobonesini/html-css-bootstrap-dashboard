@@ -6,6 +6,16 @@
     --header-height: 70px;
 }
 
+.w-105p {
+    width: 105px;
+}
+.w-75p {
+    width: 75px;
+}
+.w-85p {
+    width: 85px;
+}
+
 
 /* HEADER */
 header {
@@ -17,6 +27,12 @@ header {
 header .row {
     height: var(--header-height);
     align-items: center;
+}
+header .row .col-auto img.d-none {
+    height: 40px;
+}
+header .row .col-auto img.d-block {
+    height: 60px;
 }
 header .search,
 header .search input {
@@ -34,6 +50,11 @@ main {
     overflow: hidden;
 }
 main aside {
+    background-color: #051e34;
+    background-image: url("../img/sidebar-bg.png");
+    background-repeat: no-repeat;
+}
+main aside {
     height: calc(100vh - var(--header-height));
 }
 main aside > * {
@@ -44,10 +65,56 @@ main .dashboard {
     height: calc(100vh - var(--header-height));
 }
 
+main .dashboard .dashboard-summary .badge {
+    background-color: #165bba;
+    font-size: 0.8rem;
+}
+main .dashboard .dashboard-summary .badge:hover {
+    background-color: #0d3771;
+}
+main .dashboard .dashboard-summary .col-12.col-sm-4.col-lg-2 a {
+    vertical-align: middle;
+}
+main .dashboard .dashboard-summary .col-12.col-sm-4.col-lg-2 i.bi {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 33px;
+    vertical-align: middle;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 1.2em !important;
+}
+main .dashboard .dashboard-summary .col-12.col-sm-4.col-lg-2 i.bi:hover {
+    background-color: white;
+    color: black;
+}
 
+main .dashboard .dashboard-content .bi-pencil-fill,
+main .dashboard .dashboard-content .bi-trash3-fill {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 28px;
+    color: #69727a;
+    border: 1px solid #69727a;
+    border-radius: 5px;
+}
+main .dashboard .dashboard-content .bi-pencil-fill:hover,
+main .dashboard .dashboard-content .bi-trash3-fill:hover {
+    background-color: #69727a;
+    color: white;
+    border: 1px solid white;
+}
 
-
-
+main .dashboard .dashboard-content .code-class {
+    height: 30px;
+    margin-right: 10px;
+}
 
 
 

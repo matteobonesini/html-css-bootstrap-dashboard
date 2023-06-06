@@ -17,7 +17,7 @@
 
     </head>
     <body>
-        
+
         <!-- header -->
         <header class="bg-white">
 
@@ -25,7 +25,9 @@
 
                 <div class="col-auto">
 
-                    <img src="img/logo.svg" alt="">
+                    <img class="d-none d-lg-block" src="img/logo.svg" alt="Logo">
+
+                    <img class="d-block d-lg-none" src="img/mobile-logo.png" alt="Logo">
 
                 </div>
 
@@ -70,35 +72,35 @@
 
         <main>
 
-            <div class="row g-0">
-                
+            <div class="row g-0 mx-0">
+
                 <!-- sidebar laterale -->
-                <aside class="col-auto bg-black">
-    
+                <aside class="col-auto">
+
                     <div class="d-flex flex-column px-4 py-4 px-lg-5 py-lg-4">
 
                         <div class="flex-grow-1">
 
                             <a href="#" class="text-decoration-none text-light d-block">
-     
+
                              <i class="bi bi-house-fill fs-3 pe-2"></i>
                              <h5 class="d-none d-lg-inline-block fs-4">Home</h5>
-     
-                            </a> 
-     
+
+                            </a>
+
                             <a href="#" class="text-decoration-none text-light d-block">
-     
+
                              <i class="bi bi-graph-up fs-3 pe-2"></i>
                              <h5 class="d-none d-lg-inline-block fs-4">Stats</h5>
-     
-                            </a> 
-     
+
+                            </a>
+
                             <a href="#" class="text-decoration-none text-light d-block">
-     
+
                              <i class="bi bi-reception-4 fs-3 pe-2"></i>
                              <h5 class="d-none d-lg-inline-block fs-4">Signals</h5>
-     
-                            </a> 
+
+                            </a>
 
                         </div>
 
@@ -106,34 +108,439 @@
                        <div>
 
                            <a href="#" class="text-decoration-none text-light">
-    
+
                             <i class="bi bi-gear-fill fs-3 pe-2"></i>
                             <h5 class="d-none d-lg-inline-block fs-4">Admin</h5>
-    
-                           </a> 
+
+                           </a>
 
                        </div>
 
                     </div>
-    
+
                 </aside>
-    
+
                 <!-- dashboard content -->
                 <div class="col">
-    
-                    <div class="dashboard bg-primary overflow-auto">
 
-                        <div class="box"></div>
-                        <div class="box green"></div>
-                        <div class="box"></div>
-                        <div class="box green"></div>
-                        <div class="box"></div>
-                        <div class="box green"></div>
-                        <div class="box"></div>
-                        <div class="box yellow"></div>
+                    <div class="dashboard bg-info overflow-y-auto overflow-x-hidden">
+
+                        <div class="dashboard-summary bg-primary text-light px-2 py-4">
+
+                            <div class="row">
+
+                                <div class="col-12 col-sm-4 col-lg-2 order-lg-1">
+
+                                    <a class="text-light text-decoration-none fs-6 fw-bold" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                        Nuovo Studente
+                                        <i class="bi bi-plus-lg fs-3"></i>
+                                    </a>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+                                        <div class="offcanvas-header">
+
+                                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                        </div>
+
+                                        <div class="offcanvas-body">
+
+                                            <div>
+
+                                                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-sm-4 col-lg">
+
+                                    <h3 class="fw-bold fs-2">Boolean <span class="badge rounded-5">Piano blaze</span></h3>
+
+                                    <div>
+
+                                        <span class="badge rounded-5">3 app</span>
+                                        <i class="bi bi-caret-right"></i>
+                                        <span class="badge rounded-5 d-inline-block d-lg-none">&plus;</span>
+                                        <span class="badge rounded-5 d-none d-lg-inline-block">Boolaen mobile app</span>
+                                        <span class="badge rounded-5 d-none d-lg-inline-block">Boolane web app</span>
+                                        <span class="badge rounded-5 d-none d-lg-inline-block">Boolean blog app</span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-sm-4 col-lg-auto">
+
+                                    <h5 class="fs-6 fw-bold">Studenti online negli utlimi 30 minuti</h5>
+                                    <h4 class="fs-2">125</h4>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="dashboard-content">
+
+                            <div class="container-fluid py-3">
+
+                                <div class="row">
+
+                                    <div class="col-12 col-lg-8">
+
+                                        <div class="card mb-4">
+
+                                            <div class="card-header">
+
+                                                <h3>Prossime classi</h3>
+
+                                            </div>
+
+                                            <table class="table table-hover">
+                                                <tr>
+
+                                                    <th>
+                                                        Nome
+                                                    </th>
+
+                                                    <th class="w-105p d-none d-lg-table-cell">
+                                                        Data inizio
+                                                    </th>
+
+                                                    <th class="text-center w-75p d-none d-sm-table-cell">
+                                                        ROI
+                                                    </th>
+
+                                                    <th class="text-center w-75p">
+                                                        Stato
+                                                    </th>
+
+                                                    <th class="text-center w-85p">
+                                                        Azioni
+                                                    </th>
+
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td>
+                                                        <img class="code-class" src="img/class-avatar.jpg">
+                                                        Classe 75
+                                                    </td>
+
+                                                    <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+
+                                                    <td class="text-center">
+                                                        <span class="badge rounded-pill text-bg-success">Done</span>
+                                                    </td>
+
+                                                    <td class="text-center">
+
+                                                        <i class="bi bi-trash3-fill"></i>
+
+                                                        <i class="bi bi-pencil-fill"></i>
+
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td>
+                                                        <img class="code-class" src="img/class-avatar.jpg">
+                                                        Classe 76
+                                                    </td>
+
+                                                    <td class="d-none d-lg-table-cell">16 Feb 2021</td>
+
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+
+                                                    <td class="text-center">
+                                                        <span class="badge rounded-pill text-bg-success">Done</span>
+                                                    </td>
+
+                                                    <td class="text-center">
+
+                                                        <i class="bi bi-trash3-fill"></i>
+
+                                                        <i class="bi bi-pencil-fill"></i>
+
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td>
+                                                        <img class="code-class" src="img/class-avatar.jpg">
+                                                        Classe 77
+                                                    </td>
+
+                                                    <td class="d-none d-lg-table-cell">17 Feb 2021</td>
+
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+
+                                                    <td class="text-center">
+                                                        <span class="badge rounded-pill text-bg-warning">Process</span>
+                                                    </td>
+
+                                                    <td class="text-center">
+
+                                                        <i class="bi bi-trash3-fill"></i>
+
+                                                        <i class="bi bi-pencil-fill"></i>
+
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td>
+                                                        <img class="code-class" src="img/class-avatar.jpg">
+                                                        Classe 78
+                                                    </td>
+
+                                                    <td class="d-none d-lg-table-cell">18 Feb 2021</td>
+
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+
+                                                    <td class="text-center">
+                                                        <span class="badge rounded-pill text-bg-success">Done</span>
+                                                    </td>
+
+                                                    <td class="text-center">
+
+                                                        <i class="bi bi-trash3-fill"></i>
+
+                                                        <i class="bi bi-pencil-fill"></i>
+
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td>
+                                                        <img class="code-class" src="img/class-avatar.jpg">
+                                                        Classe 79
+                                                    </td>
+
+                                                    <td class="d-none d-lg-table-cell">19 Feb 2021</td>
+
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+
+                                                    <td class="text-center">
+                                                        <span class="badge rounded-pill text-bg-danger">Failed</span>
+                                                    </td>
+
+                                                    <td class="text-center">
+
+                                                        <i class="bi bi-trash3-fill"></i>
+
+                                                        <i class="bi bi-pencil-fill"></i>
+
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td>
+                                                        <img class="code-class" src="img/class-avatar.jpg">
+                                                        Classe 80
+                                                    </td>
+
+                                                    <td class="d-none d-lg-table-cell">20 Feb 2021</td>
+
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+
+                                                    <td class="text-center">
+                                                        <span class="badge rounded-pill text-bg-success">Done</span>
+                                                    </td>
+
+                                                    <td class="text-center">
+
+                                                        <i class="bi bi-trash3-fill"></i>
+
+                                                        <i class="bi bi-pencil-fill"></i>
+
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td>
+                                                        <img class="code-class" src="img/class-avatar.jpg">
+                                                        Classe 81
+                                                    </td>
+
+                                                    <td class="d-none d-lg-table-cell">21 Feb 2021</td>
+
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+
+                                                    <td class="text-center">
+                                                        <span class="badge rounded-pill text-bg-danger">Failed</span>
+                                                    </td>
+
+                                                    <td class="text-center">
+
+                                                        <i class="bi bi-trash3-fill"></i>
+
+                                                        <i class="bi bi-pencil-fill"></i>
+
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td>
+                                                        <img class="code-class" src="img/class-avatar.jpg">
+                                                        Classe 80
+                                                    </td>
+
+                                                    <td class="d-none d-lg-table-cell">20 Feb 2021</td>
+
+                                                    <td class="text-center d-none d-sm-table-cell">20%</td>
+
+                                                    <td class="text-center">
+                                                        <span class="badge rounded-pill text-bg-success">Done</span>
+                                                    </td>
+
+                                                    <td class="text-center">
+
+                                                        <i class="bi bi-trash3-fill"></i>
+
+                                                        <i class="bi bi-pencil-fill"></i>
+
+                                                    </td>
+
+                                                </tr>
+
+                                            </table>
+
+                                        </div>
+
+                                        <div class="card mb-4 mb-lg-0">
+
+                                            <div class="card-header">
+                                              <h3>F.A.Q.</h3>
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                          Come aggiungere un nuovo studente
+                                                        </button>
+                                                      </h2>
+                                                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body">Clicca sul &plus; in altro nella sezione blu.</div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                          Come posso accedere alle informazioni del mio account
+                                                        </button>
+                                                      </h2>
+                                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body">Clicca sull'icona della campanella.</div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                          Posso usare questa dashboard da mobile
+                                                        </button>
+                                                      </h2>
+                                                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body">Si.</div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+
+                                        <div class="card mb-4">
+
+                                            <div class="card-header">
+
+                                                <h3>Todo</h3>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <input type="checkbox">
+                                                        Kickoff nuove classi
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <input type="checkbox">
+                                                        Lezione di Boostrap 5 in classe #75
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <input type="checkbox">
+                                                        Controllare username github studenti
+                                                    </li>
+                                                  </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card">
+
+                                            <div class="card-body">
+
+                                                <ul class="list-group">
+                                                  <li class="list-group-item">
+                                                    <img class="w-100" src="img/stats.jpeg" alt="Stats">
+                                                    <h5>Utenti attivi</h5>
+                                                    Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                                  </li>
+                                                  <li class="list-group-item">Gennaio: 1200</li>
+                                                  <li class="list-group-item">Febbraio 800</li>
+                                                  <li class="list-group-item">Marzo: 1500</li>
+                                                  <li class="list-group-item"><a href="#">Visualizza repor approfondito</a></li>
+                                                </ul>
+
+                                            </div>
+
+                                          </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
 
                     </div>
-    
+
                 </div>
 
             </div>
